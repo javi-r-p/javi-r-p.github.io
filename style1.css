@@ -1,0 +1,65 @@
+@font-face {
+    font-family: gabarito;
+    src: url(gabarito_variable.woff);
+}
+body {
+    font-family: gabarito;
+}
+h1 {
+    text-align: center;
+    color: #161616;
+}
+table, td, th {
+    border: 4px solid white;
+    border-collapse: collapse;
+}
+th {
+    background-color: #D0FFAA ;
+    color: #161616;
+    padding: 20px;
+}
+td {
+    padding: 10px;
+    text-align: center;
+}
+table {
+    width: 100%;
+}
+.horas{
+    background-color: #0088ff;
+}
+.iso{
+    background-color: #009cfe;
+}
+.lmsgi{
+    background-color: #00aae0;
+}
+.gbd{
+    background-color: #00b6bd;
+}
+.fol{
+    background-color: #00be9b;   
+}
+.iasir{
+    background-color: #49c482;    
+}
+.par{
+    background-color: #8cc877;   
+}
+.fh{
+    background-color: #bcca7b;   
+}
+.recreo{
+    background-color: #e0cc8d;
+}
+.spaceBetweenTables {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+#clock {
+    color: #161616;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
