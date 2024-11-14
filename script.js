@@ -1,19 +1,24 @@
-function clock() {
-    today=new Date();
-    m=today.getMinutes();
-    m=checkTime(m);
-    document.getElementById('clock').innerHTML=h+":"+m+"";
-    t=setTimeout('clock()',0);}
-    function checkTime(i)
-    {if (i<10) {i="0" + i;}return i;}
-    window.onload=function(){clock();
+//Build a function to get the current time, only hours and minutes and put it on a div, also update the div every minute.
+function getTime() {
+    let d = new Date();
+    let h = d.getHours();
+    let m = d.getMinutes();
+    let time = document.getElementById("clock");
+    time.innerHTML = h + ":" + m;
 }
-/* let theme = document.getElementById("css");
+function updateClock() {
+    getTime();
+    setInterval(getTime, 3000);
+}
+document.addEventListener("DOMContentLoaded", function() {
+    updateClock();
+});
+let theme = document.getElementById("css");
 let d = new Date();
 let h = d.getHours();
 let m = d.getMinutes();
-if ((h >= 7 && m >= 45) || (h <= 20 && m <= 15)) {
-    theme.href = "style1.css";
-} else {
+if ((h <= 8 && m <= 0) || (h >= 18 && m >= 15)) {
     theme.href = "style2.css";
-} */
+} else {
+    theme.href = "style1.css";
+}

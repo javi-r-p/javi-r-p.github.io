@@ -4,10 +4,11 @@
 }
 body {
     font-family: gabarito;
+    font-size: 1.1em;
 }
 h1 {
     text-align: center;
-    color: #161616;
+    color: #121212;
 }
 table, td, th {
     border: 4px solid white;
@@ -15,11 +16,12 @@ table, td, th {
 }
 th {
     background-color: #D0FFAA ;
-    color: #161616;
+    color: #121212;
     padding: 20px;
 }
 td {
     padding: 10px;
+    color: #121212;
     text-align: center;
 }
 table {
@@ -55,7 +57,7 @@ table {
     width: 100%;
 }
 #clock {
-    color: #161616;
+    color: #121212;
     text-align: center;
     font-size: 32px;
     font-weight: bold;
